@@ -1674,9 +1674,9 @@ CorrectPassword = "Gans"
 
 loop = 'true'
 while (loop == 'true'):
-    username = raw_input("\033[1;97m🔒 \x1b[1;91mUsername Login \x1b[1;97m»» \x1b[1;97m")
+    username = raw_input("\033[1;97m🔒 \x1b[1;92mUsername Login \x1b[1;97m»» \x1b[1;97m")
     if (username == CorrectUsername):
-    	password = raw_input("\033[1;97m🔒 \x1b[1;91mPassword Login  \x1b[1;97m»» \x1b[1;97m")
+    	password = raw_input("\033[1;97m🔒 \x1b[1;92mPassword Login \x1b[1;97m»» \x1b[1;97m")
         if (password == CorrectPassword):
             print "Logged in successfully as " + username #Dev:YayanXD
 	    time.sleep(2)
